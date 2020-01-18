@@ -1,6 +1,7 @@
 package com.greenlearner.libraryapplication.dto;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * @author - GreenLearner(https://www.youtube.com/channel/UCaH2MTg94hrJZTolW01a3ZA)
@@ -8,7 +9,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "book")
-public class Book {
+public class Book /*implements Serializable*/ {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
