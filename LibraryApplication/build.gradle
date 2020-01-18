@@ -1,0 +1,36 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.2.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+}
+
+group = 'com.greenlearner'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	//cache
+	implementation 'org.springframework.boot:spring-boot-starter-cache'
+
+	//rest
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	//spring data
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	//my sql connector
+	compile 'mysql:mysql-connector-java:8.0.17'
+
+	//test
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}

@@ -1,0 +1,13 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: library-app
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/green?useSSL=false
+    username: root
+    password: tiger
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
