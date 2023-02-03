@@ -1,13 +1,12 @@
 server:
-  port: 8001
+  port: 23031
 
 spring:
   application:
     name: library-app
 
   datasource:
-    url: jdbc:mysql://localhost:3306/green?useSSL=false
-    username: root
-    password: tiger
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${LOCAL_DATASOURCE_URL:jdbc:postgresql://localhost:5432/library_caching}
+    username: ${LOCAL_POSTGRES_USERNAME}
+    password: ${LOCAL_POSTGRES_PASSWORD}
 

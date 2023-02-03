@@ -22,8 +22,9 @@ dependencies {
 	//spring data
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
-	//my sql connector
-	compile 'mysql:mysql-connector-java:8.0.17'
+	//postgres connector
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
+
 
 	//test
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
