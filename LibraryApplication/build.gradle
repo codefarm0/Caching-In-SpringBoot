@@ -23,7 +23,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
 	//postgres connector
-	implementation group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.4.1'
 
 
 	//test
